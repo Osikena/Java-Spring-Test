@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>User Details</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Get User Information</div>
+        <div th:text="${data.fullname}"></div>
+        <div th:text="${data.accountnumber}"></div>
+        <div th:text="${data.balance}"></div>
+        
+        <div><a th:href="@{/withdrawal}">Withdraw</a></div>
+        <div><a th:href="@{/deposit}">Deposit</a></div>
+        <div><a th:href="@{/statement}">Get Statment</a></div>
+        
+    </body>
+</html>
